@@ -1,0 +1,10 @@
+<div  class="col-12 d-flex flex-row flex-wrap justify-content-around">
+    <div class="card bg-white m-2 p-3 rounded text-center" [style]="{'width':'350px'}" *ngFor="let item of cardInfo">
+        <app-image-customized src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"></app-image-customized>
+        <app-heading class="card-text" [text]="item.title | titlecase"></app-heading>
+        <div class="card-body p-0">
+            <app-text-costomized [textBody]="item.body | titlecase" class="card-text"></app-text-costomized>
+            <app-button></app-button>
+        </div>
+    </div>
+</div>
